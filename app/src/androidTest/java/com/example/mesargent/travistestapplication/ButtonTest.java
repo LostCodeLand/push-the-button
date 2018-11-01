@@ -12,6 +12,7 @@ import static android.support.test.espresso.assertion.ViewAssertions.matches;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
+import static junit.framework.Assert.assertTrue;
 
 @RunWith(AndroidJUnit4.class)
 public class ButtonTest {
@@ -24,7 +25,12 @@ public class ButtonTest {
     public void clickButton_changesText() throws Exception{
         onView(withId(R.id.button))
                 .perform(click());
-        //Setting up to fail
+
         onView(withId(R.id.text_view)).check(matches(withText("Thanks for being so passionate!")));
+    }
+
+    @Test
+    public void AlwaysPassTest() throws Exception{
+        assertTrue(true);
     }
 }
