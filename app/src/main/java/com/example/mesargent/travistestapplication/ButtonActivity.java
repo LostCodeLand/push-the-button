@@ -21,7 +21,7 @@ public class ButtonActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textView.setText("Thanks for being so passionate!");
+                textView.setText("Thanks for being so fail!");
 
                 
             }
