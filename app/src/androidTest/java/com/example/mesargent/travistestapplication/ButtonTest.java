@@ -31,6 +31,6 @@ public class ButtonTest {
 
     @Test
     public void AlwaysPassTest() throws Exception{
-        assertTrue(true);
+        assertTrue(false);
     }
 }
